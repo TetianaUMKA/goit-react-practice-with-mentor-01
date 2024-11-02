@@ -9,6 +9,7 @@ import {
 } from "components";
 
 import articleData from "./data/article.json";
+import statsData from "./data/stats.json";
 
 export const App = () => {
   return (
@@ -18,8 +19,11 @@ export const App = () => {
         <BlogCard data={articleData} />
 
         <Heading title="Task 2 Statistics" top bottom />
-        <Statistics title="Main Statistics" />
-
+        {statsData.title ? (
+          <Statistics title="Main Statistics" stats={statsData} />
+        ) : (
+          <Statistics stats={statsData} />
+        )}
         <Heading title="Task 3 Forbes list" top bottom />
         <ForbesList />
 
