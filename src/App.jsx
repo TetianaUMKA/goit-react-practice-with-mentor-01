@@ -6,14 +6,16 @@ import {
   Statistics,
   CryptoHistory,
   ForbesList,
-} from 'components';
+} from "components";
+
+import articleData from "./data/article.json";
 
 export const App = () => {
   return (
     <Section>
       <Container>
         <Heading title="Task 1 Blog Card" bottom />
-        <BlogCard />
+        <BlogCard data={articleData} />
 
         <Heading title="Task 2 Statistics" top bottom />
         <Statistics title="Main Statistics" />
