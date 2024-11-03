@@ -22,7 +22,7 @@ export const App = () => {
         {statsData.title ? (
           <Statistics title="Main Statistics" stats={statsData} />
         ) : (
-          <Statistics stats={statsData} />
+          <Statistics data={statsData} />
         )}
         <Heading title="Task 3 Forbes list" top bottom />
         <ForbesList />

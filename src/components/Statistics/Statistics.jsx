@@ -11,12 +11,12 @@ const icons = [
   <GiTreeDoor />,
 ];
 
-export const Statistics = ({ title, stats }) => {
+export const Statistics = ({ title, data }) => {
   return (
     <>
       {title && <h2 className={styles.title}>{title}</h2>}
       <ul className={styles.list}>
-        {stats.map(({ id, title, total }, index) => (
+        {data.map(({ id, title, total }, index) => (
           <StatisticsItem
             key={id}
             itemTitle={title}
