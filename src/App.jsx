@@ -10,6 +10,7 @@ import {
 
 import articleData from "./data/article.json";
 import statsData from "./data/stats.json";
+import forbesData from "./data/forbes.json";
 
 export const App = () => {
   return (
@@ -25,7 +26,7 @@ export const App = () => {
           <Statistics data={statsData} />
         )}
         <Heading title="Task 3 Forbes list" top bottom />
-        <ForbesList />
+        <ForbesList data={forbesData} />
 
         <Heading title="Task 4 Crypto history" top bottom />
         <CryptoHistory />
